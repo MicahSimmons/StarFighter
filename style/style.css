@@ -1,0 +1,116 @@
+body {
+  background: darkgrey;
+  color: lime;
+}
+
+.gamecontainer {
+  width: 90vw;
+  height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+#gamespace {
+  width: 100%;
+  height: 100%;
+  background: black;
+  position:relative;
+  cursor:none;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Revalia', cursive;
+  cursor: default !important;
+}
+
+.menubtn {
+  color: black;
+  background-color: darkgreen;
+  border: solid 2px lime;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.menubtn:hover {
+  border: solid 2px darkgreen;
+  background-color: lime;
+}
+
+.sprite {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+
+.text {
+  display: inline-block;
+  font-family: 'Revalia', cursive;
+  vertical-align: text-top;
+  min-width: 100px;
+}
+
+.explosion {
+  position: absolute;
+  background: url("../images/explosion4.png");
+  background-position: 0px 0px;
+  width: 256px;
+  height: 256px;
+}
+
+#ui_target {
+  background-image: url("../images/star2.png");
+  filter: sepia(100%) hue-rotate(90deg) saturate(800%);
+  width: 20px;
+  height: 20px;
+}
+
+#ui_start {
+  background-image: url("../images/star3.png");
+  width: 60px;
+  height: 60px;
+}
+
+#avatar {
+  background-image: url("../images/playerShip1_blue.png");
+  width: 60px;
+  height: 40px;
+}
+
+#thrust {
+  background-image: url("../images/fire06.png");
+  width: 60px;
+  height: 60px;
+}
+
+.lazer {
+  background-image: url("../images/laserRed01.png");
+  width: 10px;
+  height: 60px;
+}
+
+.bg_star {
+  background-image: url("../images/star1.png");
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+}
+
+.enemy {
+  background-image: url("../images/enemyBlack1.png");
+  width: 60px;
+  height: 40px;
+}
